@@ -2,14 +2,12 @@
 <%--<%@ page import="sy.model.base.SessionInfo"%>--%>
 <%
 String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-	<base href="<%=basePath%>">
-
 	<title>My JSP 'index.jsp' starting page</title>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -36,6 +34,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 </body>
 <script type="text/javascript">
-	window.location.href="production/login.html";
+	window.location.href="<%=basePath%>/production/login.jsp";
 </script>
 </html>
