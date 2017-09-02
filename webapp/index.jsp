@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%--<%@ page import="sy.model.base.SessionInfo"%>--%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
@@ -15,26 +14,58 @@
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
 
-	<title>My JSP 'index.jsp' starting page</title>
-	
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
-	
-	<%--<jsp:include page="inc.jsp"></jsp:include>--%>
-	<%--
-		SessionInfo sessionInfo = (SessionInfo) session.getAttribute("sessionInfo");
-		if (sessionInfo != null) {
-			request.getRequestDispatcher("/securityJsp/main.jsp").forward(request, response);
-		} else {
-			request.getRequestDispatcher("/login.jsp").forward(request, response);
-		}
-	--%>
-</head>
+	<title>Gentelella Alela!</title>
 
+	<!-- Bootstrap -->
+	<link href="<%=basePath%>/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="<%=basePath%>/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- NProgress -->
+	<link href="<%=basePath%>/vendors/nprogress/nprogress.css" rel="stylesheet">
+	<!-- Animate.css -->
+	<link href="<%=basePath%>/vendors/animate.css/animate.min.css" rel="stylesheet">
+
+	<link rel="icon" href="<%=basePath%>/production/ico/ooopic_1502009337.ico" type="image/x-icon"/>
+	<style>
+		.demo-head{
+			background-color: #3C3C3C;
+			color: #fff;
+			padding: 20px 0 30px;
+			text-align: center;
+		}
+		.demos{
+
+			max-width: 1100px;
+			margin: auto;
+			margin-top: 100px;
+			text-align: center;
+		}
+		body{
+			background-color:#000;
+		}
+		h3{
+			color:#fff;
+		}
+	</style>
+</head>
 <body>
+<div class="demo-head">
+	<h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
+</div>
+<div class="row demos">
+	<div class="col-md-6">
+
+		<a href="src/pages/main/login.jsp"><img src="production/images/sys.jpg" alt="Demo"></a>
+		<br>
+		<h3>系统登录</h3>
+	</div>
+	<div class="col-md-6">
+
+		<a href="production/login.html"><img src="production/images/demo.jpg" alt="Demo"></a>
+		<br>
+		<h3>示例演示</h3>
+	</div>
+
+</div>
 </body>
-<script type="text/javascript">
-	window.location.href="<%=basePath%>/production/login.jsp";
-</script>
 </html>
