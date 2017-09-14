@@ -3,7 +3,7 @@
 	<display-name>ssm</display-name>
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:spring.xml,classpath:spring-mybatis.xml</param-value>
+		<param-value>classpath:spring.xml,classpath:spring-mybatis.xml,classpath:spring-cxf.xml</param-value>
 	</context-param>
 	<filter>
 		<description>字符集过滤器</description>
@@ -42,6 +42,15 @@
 	<servlet-mapping>
 		<servlet-name>springMvc</servlet-name>
 		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<!-- cxf WebService服务 -->
+	<servlet>
+		<servlet-name>cxfService</servlet-name>
+		<servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cxfService</servlet-name>
+		<url-pattern>/ws/*</url-pattern>
 	</servlet-mapping>
 	<error-page>
     	<error-code>403</error-code>
