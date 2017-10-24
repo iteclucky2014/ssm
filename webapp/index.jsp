@@ -55,13 +55,13 @@
 <div class="row demos">
 	<div class="col-md-6">
 
-		<a href="src/pages/main/login.jsp"><img src="production/images/sys.jpg" alt="Demo"></a>
+		<a href="src/pages/main/login.jsp"><img src="production/images/sys.jpg" alt="系统登录"></a>
 		<br>
 		<h3>系统登录</h3>
 	</div>
 	<div class="col-md-6">
 
-		<a href="production/login.html"><img src="production/images/demo.jpg" alt="Demo"></a>
+		<a href="production/login.html"><img src="production/images/demo.jpg" alt="示例演示"></a>
 		<br>
 		<h3>示例演示</h3>
 	</div>
